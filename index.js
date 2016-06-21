@@ -36,6 +36,11 @@ var config = {
       "masterKey": "",
       "appName": ""
     }
+  ],"users": [
+    {
+      "user":"user",
+      "pass":"pass"
+    }
   ]
 };
 
