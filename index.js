@@ -26,6 +26,21 @@ var api = new ParseServer({
 // If you wish you require them, you can set them as options in the initialization above:
 // javascriptKey, restAPIKey, dotNetKey, clientKey
 
+
+var config = {
+  "allowInsecureHTTP": true,
+  "apps": [
+    {
+      "serverURL": "http://localhost:1337/parse",
+      "appId": "myAppId",
+      "masterKey": "",
+      "appName": ""
+    }
+  ]
+};
+
+var dashboard = new ParseDashboard(config, config.allowInsecureHTTP);
+/*
 var dashboard = new ParseDashboard(
   {"allowInsecureHTTP":true,
   "apps": [
@@ -37,6 +52,7 @@ var dashboard = new ParseDashboard(
     }
   ]
 });
+*/
 var app = express();
 
 // Serve static assets from the /public folder
