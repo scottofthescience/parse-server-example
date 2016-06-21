@@ -27,7 +27,7 @@ var api = new ParseServer({
 // javascriptKey, restAPIKey, dotNetKey, clientKey
 
 var dashboard = new ParseDashboard(
-  {
+  {"allowInsecureHTTP":true,
   "apps": [
     {
       "serverURL": "https://msbandcollectertest.herokuapp.com/parse",
