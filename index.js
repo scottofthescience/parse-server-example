@@ -32,7 +32,7 @@ var config = {
   "apps": [
     {
       //"serverURL": "http://localhost:1337/parse", saw some mention of localhost not working
-      "serverURL":"https://msbandcollectertest.herokuapp.com/parse",
+      "serverURL":"https://msbandcollectertest.herokuapp.com/parse/",
       "appId": "myAppId",
       "masterKey": "masterKey",
       "appName": ""
