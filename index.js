@@ -20,6 +20,12 @@ var api = new ParseServer({
   serverURL: process.env.SERVER_URL || 'https://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
+  },
+  push: {
+  	android : {
+  		senderId : "340470252441",
+  		apiKey : "AIzaSyDa8x19rp7gH2M1o6uPkOY6AlBP-7j-JLU"
+  	}
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
